@@ -1,0 +1,46 @@
+{
+  "doctors": [
+    {
+      "id": 7,
+      "name": "Kristian Gary",
+      "gender": "Male",
+      "specialties": "Endocrinologist"
+    },
+    {
+      "id": 6,
+      "name": "Jac Patel",
+      "gender": "Male",
+      "specialties": "Pediatrician"
+    },
+    {
+      "id": 5,
+      "name": "Shane Jamie",
+      "gender": "Male",
+      "specialties": "Cardiologist"
+    },
+    {
+      "id": 4,
+      "name": "Gary Jac",
+      "gender": "Male",
+      "specialties": "Pediatrician"
+    },
+    {
+      "id": 3,
+      "name": "Stella Patel",
+      "gender": "Female",
+      "specialties": "Oncologist"
+    },
+    {
+      "id": 2,
+      "name": "Hamza Patel",
+      "gender": "Female",
+      "specialties": "Neurologist"
+    },
+    {
+      "id": 1,
+      "name": "Bruce Patel",
+      "gender": "Male",
+      "specialties": "Pediatrician"
+    }
+  ]
+}
