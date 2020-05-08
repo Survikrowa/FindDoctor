@@ -23,7 +23,7 @@ export class FindDoctor extends React.Component {
           >
             <ViewDoctors onMessageBtnClick={this.handleMessageBtnClick} />
           </div>
-          <Message currentDoctor={this.state.doctorData} />
+          <Message currentDoctor={this.state.doctorPersonals} />
         </div>
       </div>
     );
