@@ -5,11 +5,11 @@ import { Message } from "../Message/Message";
 
 export class FindDoctor extends React.Component {
   state = {
-    doctorData: undefined
+    doctorPersonals: undefined
   };
 
   handleMessageBtnClick = nameAndSubname => {
-    this.setState({ doctorData: nameAndSubname.doctor });
+    this.setState({ doctorPersonals: nameAndSubname.doctor });
   };
   render() {
     return (
