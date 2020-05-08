@@ -1,5 +1,5 @@
 import React from "react";
-import { Form } from "./Form";
+import { Form } from "../Form";
 import { Error } from "./Error";
 export class Message extends React.Component {
   state = {

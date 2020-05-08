@@ -1,6 +1,6 @@
 import React from "react";
 import faker from "faker";
-import { Button } from "../button/Button";
+import { Button } from "../../button/Button";
 
 export class Doctor extends React.Component {
   onButtonClick(props) {
@@ -23,11 +23,9 @@ export class Doctor extends React.Component {
                 {this.props.doctor.subname}
               </span>
             </div>
-
             <span>{this.props.doctor.specialties}</span>
           </div>
         </div>
-
         <Button
           onClick={() => this.onButtonClick(this.props)}
           btnStyle="bg-blue-700 hover:bg-blue-700 text-white py-2 px-4 rounded"

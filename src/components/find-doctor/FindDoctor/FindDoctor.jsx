@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./findDoctor.module.css";
-import { ViewDoctors } from "./viewDoctors";
-import { Message } from "./message";
+import { ViewDoctors } from "../ViewDoctors/ViewDoctors";
+import { Message } from "../Message/Message";
 
 export class FindDoctor extends React.Component {
   state = {

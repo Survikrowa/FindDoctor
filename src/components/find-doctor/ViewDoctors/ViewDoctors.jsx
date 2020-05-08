@@ -1,6 +1,6 @@
 import React from "react";
-import { API } from "../../utils/apiCall";
-import { Doctor } from "./doctor";
+import { API } from "../../../utils/apiCall";
+import { Doctor } from "./Doctor";
 import { Filter } from "./Filter";
 
 export class ViewDoctors extends React.Component {

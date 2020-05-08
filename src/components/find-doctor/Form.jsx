@@ -1,6 +1,6 @@
 import React from "react";
-import { MessageInput } from "./MessageInput";
-import { EmailInput } from "./EmailInput";
+import { MessageInput } from "./Message/MessageInput";
+import { EmailInput } from "./EmailInput/EmailInput";
 import { Button } from "../button/Button";
 import styles from "./Form.module.css";
 
