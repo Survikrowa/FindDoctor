@@ -6,7 +6,7 @@ class Service extends React.Component {
   render() {
     const { item } = this.props;
     return (
-      <div className={styles.background + " p-8"} key={item.id}>
+      <div className={styles.background + " p-8"}>
         <div className="flex justify-center items-center">
           <img src={WhiteEllipse} alt="whiteEllipse" />
           <img className="absolute" src={item.iconUrl} alt="serviceIcon" />
