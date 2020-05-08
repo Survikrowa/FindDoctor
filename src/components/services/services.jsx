@@ -1,9 +1,9 @@
 import React from "react";
-import Service from "./service";
+import { Service } from "./Service";
 
 import { servicesArray } from "./servicesArray";
 
-class Services extends React.Component {
+export class Services extends React.Component {
   state = {
     servicesArray
   };
@@ -19,5 +19,3 @@ class Services extends React.Component {
     );
   }
 }
-
-export default Services;

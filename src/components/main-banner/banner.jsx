@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Banner.module.css";
 import banner from "../../assets/MainBanner.jpg";
 
-class Banner extends React.Component {
+export class Banner extends React.Component {
   render() {
     return (
       <div>
@@ -11,5 +11,3 @@ class Banner extends React.Component {
     );
   }
 }
-
-export default Banner;

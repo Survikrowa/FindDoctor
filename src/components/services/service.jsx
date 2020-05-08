@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./services.module.css";
 import WhiteEllipse from "../../assets/WhiteEllipse.png";
 
-class Service extends React.Component {
+export class Service extends React.Component {
   render() {
     const { item } = this.props;
     return (
@@ -19,5 +19,3 @@ class Service extends React.Component {
     );
   }
 }
-
-export default Service;

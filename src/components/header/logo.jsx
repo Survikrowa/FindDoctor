@@ -1,6 +1,6 @@
 import React from "react";
 
-class logo extends React.Component {
+export class Logo extends React.Component {
   render() {
     return (
       <section className="flex justify-center mb-5">
@@ -9,5 +9,3 @@ class logo extends React.Component {
     );
   }
 }
-
-export default logo;
