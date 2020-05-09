@@ -1,0 +1,46 @@
+{
+  "doctors": [
+    {
+      "id": 1,
+      "name": "Kristian",
+      "subname": "Gary",
+      "specialties": "Endocrinologist"
+    },
+    {
+      "id": 2,
+      "name": "Jac",
+      "subname": "Patel",
+      "specialties": "Pediatrician"
+    },
+    {
+      "id": 3,
+      "name": "Shane",
+      "subname": "Jamie",
+      "specialties": "Cardiologist"
+    },
+    {
+      "id": 4,
+      "name": "Gary",
+      "subname": "Jac",
+      "specialties": "Pediatrician"
+    },
+    {
+      "id": 5,
+      "name": "Stella",
+      "subname": "Patel",
+      "specialties": "Oncologist"
+    },
+    {
+      "id": 6,
+      "name": "Hamza",
+      "subname": "Patel",
+      "specialties": "Neurologist"
+    },
+    {
+      "id": 7,
+      "name": "Bruce",
+      "subname": "Patel",
+      "specialties": "Pediatrician"
+    }
+  ]
+}
