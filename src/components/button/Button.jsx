@@ -13,7 +13,7 @@ export class Button extends React.Component {
         onClick={this.props.onClick}
         type={this.props.btnType}
       >
-        {this.props.content}
+        {this.props.children}
       </button>
     );
   }

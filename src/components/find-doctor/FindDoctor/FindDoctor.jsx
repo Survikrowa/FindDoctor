@@ -5,11 +5,11 @@ import { Message } from "../Message/Message";
 
 export class FindDoctor extends React.Component {
   state = {
-    doctorPersonals: undefined
+    currentDoctor: undefined
   };
 
-  handleMessageBtnClick = nameAndSubname => {
-    this.setState({ doctorPersonals: nameAndSubname.doctor });
+  handleMessageBtnClick = newDoctor => {
+    this.setState({ currentDoctor: newDoctor });
   };
   render() {
     return (
@@ -23,7 +23,7 @@ export class FindDoctor extends React.Component {
           >
             <ViewDoctors onMessageBtnClick={this.handleMessageBtnClick} />
           </div>
-          <Message currentDoctor={this.state.doctorPersonals} />
+          <Message currentDoctor={this.state.currentDoctor} />
         </div>
       </div>
     );

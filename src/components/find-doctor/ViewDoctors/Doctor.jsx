@@ -27,10 +27,11 @@ export class Doctor extends React.Component {
           </div>
         </div>
         <Button
-          onClick={() => this.onButtonClick(this.props)}
+          onClick={() => this.onButtonClick(this.props.doctor)}
           btnStyle="bg-blue-700 hover:bg-blue-700 text-white py-2 px-4 rounded"
-          content="Message me"
-        />
+        >
+          Message me
+        </Button>
       </div>
     );
   }

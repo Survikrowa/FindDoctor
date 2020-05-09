@@ -1,4 +1,4 @@
-export const infoArray = [
+export const contacts = [
   {
     id: 1,
     iconClassName: "fas fa-briefcase absolute fa-2x ml-2",

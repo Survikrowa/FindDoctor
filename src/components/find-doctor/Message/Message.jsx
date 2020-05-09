@@ -1,5 +1,5 @@
 import React from "react";
-import { Form } from "../Form";
+import { MessageForm } from "../Form";
 import { Error } from "./Error";
 export class Message extends React.Component {
   state = {
@@ -12,10 +12,9 @@ export class Message extends React.Component {
   };
 
   render() {
-    console.log(this.state);
     return (
       <>
-        <Form
+        <MessageForm
           doctorInfo={this.props.currentDoctor}
           btnOnClick={this.handleClick}
         />

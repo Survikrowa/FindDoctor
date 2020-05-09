@@ -4,7 +4,7 @@ import { EmailInput } from "./EmailInput/EmailInput";
 import { Button } from "../button/Button";
 import styles from "./Form.module.css";
 
-export class Form extends React.Component {
+export class MessageForm extends React.Component {
   state = {
     inputValue: ""
   };
@@ -24,12 +24,17 @@ export class Form extends React.Component {
     }
   };
 
-  handleClick = () => {
+  clearInput = () => {
     this.setState({ inputValue: "" });
   };
 
+  onClickHandler = () => {
+    return this.state.inputValue
+      ? this.clearInput()
+      : this.props.btnOnClick(true);
+  };
+
   render() {
-    console.log(this.state.inputValue);
     return (
       <div className="flex flex-col items-center p-8">
         <EmailInput doctorInfo={this.props.doctorInfo} />
@@ -42,13 +47,10 @@ export class Form extends React.Component {
             styles.btn +
             " bg-blue-700 hover:bg-blue-700 text-white py-2 px-4 rounded "
           }
-          onClick={
-            this.state.inputValue
-              ? this.handleClick
-              : () => this.props.btnOnClick(true)
-          }
-          content="Send message"
-        />
+          onClick={() => this.onClickHandler()}
+        >
+          Send message
+        </Button>
       </div>
     );
   }

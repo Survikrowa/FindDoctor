@@ -17,20 +17,23 @@ export class Filter extends React.Component {
     this.setState({ selectedSpecialization: e.target.value });
   };
 
+  renderOptions = () => {
+    return this.createSet().map(speciality => (
+      <Option content={speciality} key={speciality} />
+    ));
+  };
+
   render() {
     return (
-      <label htmlFor="specialization-select">
+      <label>
         Choose a specialization:
         <select
           name="specializations"
-          id="specialization-select"
           onChange={this.onChangeHandler}
           value={this.state.selectedSpecialization}
         >
           <option value="">--Please choose an option--</option>
-          {this.createSet().map(speciality => (
-            <Option content={speciality} />
-          ))}
+          {this.renderOptions()}
         </select>
       </label>
     );
