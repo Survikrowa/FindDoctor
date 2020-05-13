@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export class Contact extends React.Component {
   render() {
@@ -14,3 +15,9 @@ export class Contact extends React.Component {
     );
   }
 }
+
+Contact.propTypes = {
+  iconClass: PropTypes.string,
+  boldContent: PropTypes.string,
+  content: PropTypes.string
+};

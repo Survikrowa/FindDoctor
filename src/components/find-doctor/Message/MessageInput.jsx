@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./MessageInput.module.css";
+import PropTypes from "prop-types";
 
 export class MessageInput extends React.Component {
   render() {
@@ -13,3 +14,8 @@ export class MessageInput extends React.Component {
     );
   }
 }
+
+MessageInput.propTypes = {
+  textAreaTextValue: PropTypes.string,
+  stateUpdateMethod: PropTypes.func
+};

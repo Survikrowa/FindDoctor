@@ -1,6 +1,7 @@
 import React from "react";
 import faker from "faker";
 import { Button } from "../../button/Button";
+import PropTypes from "prop-types";
 
 export class Doctor extends React.Component {
   onButtonClick(props) {
@@ -36,3 +37,12 @@ export class Doctor extends React.Component {
     );
   }
 }
+
+Doctor.propTypes = {
+  doctor: PropTypes.shape({
+    id: PropTypes.number,
+    name: PropTypes.string,
+    subname: PropTypes.string,
+    specialties: PropTypes.string
+  })
+};

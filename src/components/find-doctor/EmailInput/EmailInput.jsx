@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./EmailInput.module.css";
+import PropTypes from "prop-types";
 
 export class EmailInput extends React.Component {
   getValueForInput = () => {
@@ -24,3 +25,7 @@ export class EmailInput extends React.Component {
     );
   }
 }
+
+EmailInput.propTypes = {
+  doctorInfo: PropTypes.objectOf(PropTypes.string)
+};
