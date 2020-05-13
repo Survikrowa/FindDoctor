@@ -4,12 +4,12 @@ import { Contact } from "./Contact";
 
 export class Contacts extends React.Component {
   renderContacts = () => {
-    return contacts.map(info => (
+    return contacts.map(contact => (
       <Contact
-        key={info.id}
-        content={info.text}
-        boldContent={info.boldText}
-        iconClass={info.iconClassName}
+        key={contact.id}
+        content={contact.text}
+        boldContent={contact.boldText}
+        iconClass={contact.iconClassName}
       />
     ));
   };

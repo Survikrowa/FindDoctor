@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 import { Option } from "./Option";
 
 export class Filter extends React.Component {
@@ -39,3 +39,14 @@ export class Filter extends React.Component {
     );
   }
 }
+
+Filter.propTypes = {
+  doctors: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.number,
+      name: PropTypes.string,
+      subname: PropTypes.string,
+      specialties: PropTypes.string
+    })
+  )
+};

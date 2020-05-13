@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styles from "./services.module.css";
 import WhiteEllipse from "../../assets/WhiteEllipse.png";
 
@@ -24,3 +25,9 @@ export class Service extends React.Component {
     );
   }
 }
+
+Service.propTypes = {
+  iconUrl: PropTypes.string,
+  boldText: PropTypes.string,
+  text: PropTypes.string
+};
